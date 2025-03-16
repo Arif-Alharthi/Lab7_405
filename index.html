@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 7 - Async JavaScript</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Lab 7</h1>
+  <h2>Unsplash API Search</h2>
+
+  <div class="search-container">
+    <input type="text" id="searchQuery" placeholder="اكتب كلمة البحث...">
+    <button onclick="searchXHR()">Search using XHR</button>
+    <button onclick="searchFetch()">Search using fetch (promises)</button>
+    <button onclick="searchAsyncAwait()">Search using fetch (async/await)</button>
+  </div>
+
+  <div id="imageResults" class="image-results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
